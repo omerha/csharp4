@@ -1,0 +1,6 @@
+C:\School\csharp4\C18 Ex04 GuyBronshtein 301002762 OmerHarel 204059331\Ex04.Menus.Interfaces\bin\Debug\Ex04.Menus.Interfaces.dll
+C:\School\csharp4\C18 Ex04 GuyBronshtein 301002762 OmerHarel 204059331\Ex04.Menus.Interfaces\bin\Debug\Ex04.Menus.Interfaces.pdb
+C:\School\csharp4\C18 Ex04 GuyBronshtein 301002762 OmerHarel 204059331\Ex04.Menus.Interfaces\obj\Debug\Ex04.Menus.Interfaces.csprojAssemblyReference.cache
+C:\School\csharp4\C18 Ex04 GuyBronshtein 301002762 OmerHarel 204059331\Ex04.Menus.Interfaces\obj\Debug\Ex04.Menus.Interfaces.csproj.CoreCompileInputs.cache
+C:\School\csharp4\C18 Ex04 GuyBronshtein 301002762 OmerHarel 204059331\Ex04.Menus.Interfaces\obj\Debug\Ex04.Menus.Interfaces.dll
+C:\School\csharp4\C18 Ex04 GuyBronshtein 301002762 OmerHarel 204059331\Ex04.Menus.Interfaces\obj\Debug\Ex04.Menus.Interfaces.pdb

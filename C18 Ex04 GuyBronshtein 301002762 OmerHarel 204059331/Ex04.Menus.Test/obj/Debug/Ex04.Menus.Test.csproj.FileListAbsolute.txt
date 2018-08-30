@@ -1,0 +1,2 @@
+C:\School\csharp4\C18 Ex04 GuyBronshtein 301002762 OmerHarel 204059331\Ex04.Menus.Test\obj\Debug\Ex04.Menus.Test.csprojAssemblyReference.cache
+C:\School\csharp4\C18 Ex04 GuyBronshtein 301002762 OmerHarel 204059331\Ex04.Menus.Test\obj\Debug\Ex04.Menus.Test.csproj.CoreCompileInputs.cache
