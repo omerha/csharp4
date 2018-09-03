@@ -36,7 +36,6 @@ namespace Ex04.Menus.Interfaces
         }
         public override void Run()
         {
-            Console.Clear();
             m_MenuItemaction.Excecute();
             PreviousMenu.Run();
         }
