@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,7 +9,9 @@ namespace Ex04.Menus.Test
     {
         static void Main()
         {
-
+            InterFaceMenu interFaceMenuTest = new InterFaceMenu();
         }
+      
+        
     }
 }
