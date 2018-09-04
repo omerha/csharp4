@@ -1,17 +1,15 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Ex04.Menus.Test
 {
-    class Program
+    public class Program
     {
-        static void Main()
+        public static void Main()
         {
             InterFaceMenu interFaceMenuTest = new InterFaceMenu();
+            DelegateMenu delegateMenuTest = new DelegateMenu();
         }
-      
-        
     }
 }

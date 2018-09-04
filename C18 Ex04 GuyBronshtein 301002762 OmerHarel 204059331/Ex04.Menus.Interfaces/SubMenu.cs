@@ -9,25 +9,31 @@ namespace Ex04.Menus.Interfaces
         private static bool showMenu = true;
         private List<MenuItem> m_MenuItems;
         private int m_Level;
-        public SubMenu(int i_Level,string i_ItemName,SubMenu i_PreviousMenu, List<MenuItem> i_MenuItems):base(i_ItemName,i_PreviousMenu)
+
+        public SubMenu(int i_Level,string i_ItemName,SubMenu i_PreviousMenu, List<MenuItem> i_MenuItems)
+            : base(i_ItemName,i_PreviousMenu)
         {
             m_MenuItems = i_MenuItems;
             m_Level = i_Level;
         }
+
         public int Level
         {
             get { return m_Level; }
             set { m_Level = value; }
         }
+
         public List<MenuItem> MenuItems
         {
             get { return m_MenuItems; }
             set { m_MenuItems = value; }
         }
+
         public override void Run()
         {
             ShowMenu();   
         }
+
         public int GetUserInputAndValidate()
         {
             string userInputString = null;
@@ -43,11 +49,13 @@ namespace Ex04.Menus.Interfaces
                         userInputValid = true;
                     }
                 }
+
                 if (!userInputValid)
                 {
                     Console.WriteLine("Invalid input, try again");
                 }
             }
+
             return userInputInt;
         }
 
@@ -65,6 +73,7 @@ namespace Ex04.Menus.Interfaces
             {
                 backOrExit = "Back";
             }
+
             while (showMenu)
             {
                 Console.Clear();
@@ -74,6 +83,7 @@ namespace Ex04.Menus.Interfaces
                 {
                     Console.WriteLine("{0}. {1}", index++, menuItem.ItemText);
                 }
+
                 userInput = GetUserInputAndValidate();
                 if (userInput == k_ExitOrBackNumber)
                 {
@@ -88,7 +98,6 @@ namespace Ex04.Menus.Interfaces
                     m_MenuItems[userInput - 1].Run();
                 }
             }
-
         }
     }
 }

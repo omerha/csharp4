@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using static Ex04.Menus.Interfaces.MainMenu;
 
-namespace Ex04.Menus.Interfaces
+namespace Ex04.Menus.Delegates
 {
-   public abstract class MenuItem 
+    public delegate void ClickEventHandler();
+
+    public abstract class MenuItem
     {
-        protected const int k_ExitOrBackNumber = 0;
         private string m_ItemText;
         private SubMenu m_PreviousMenu;
 
-        public MenuItem(string i_ItemText,SubMenu i_PreviousMenu)
+        protected MenuItem(string i_MenuItemName, SubMenu i_ParentItem)
         {
-            m_ItemText = i_ItemText;
-            m_PreviousMenu = i_PreviousMenu;
+            m_ItemText = i_MenuItemName;
+            m_PreviousMenu = i_ParentItem;
         }
 
         public string ItemText

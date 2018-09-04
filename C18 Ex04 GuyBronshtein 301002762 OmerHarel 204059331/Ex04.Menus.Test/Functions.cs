@@ -1,7 +1,7 @@
-﻿using Ex04.Menus.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Ex04.Menus.Interfaces;
 
 namespace Ex04.Menus.Test
 {
@@ -14,11 +14,13 @@ namespace Ex04.Menus.Test
                 ShowDate();
             }
         }
+
         public static void ShowDate()
         {
             string date = string.Format("The date is: {0}", DateTime.Now.Date.ToShortDateString());
             PrintToUI(date);
         }
+
         public class ShowTimeHelper : MainMenu.IMenuItemAction
         {
             public void Excecute()
@@ -26,11 +28,13 @@ namespace Ex04.Menus.Test
                 ShowTime();
             }
         }
+
         public static void ShowTime()
         {
             string time = string.Format("The time is: {0}", DateTime.Now.ToString("HH:mm:ss"));
             PrintToUI(time);
         }
+
         public class ShowVersionHelper : MainMenu.IMenuItemAction
         {
             public void Excecute()
@@ -38,11 +42,13 @@ namespace Ex04.Menus.Test
                 ShowVersion();
             }
         }
+
         public static void ShowVersion()
         {
             string version = "The version is: 18.3.4.0";
             PrintToUI(version);
         }
+
         public class CountCapitals : MainMenu.IMenuItemAction
         {
             public void Excecute()
@@ -50,6 +56,7 @@ namespace Ex04.Menus.Test
                 CountCapitalLetters();
             }
         }
+
         public static void CountCapitalLetters()
         {
             string userInput = null;
@@ -65,9 +72,11 @@ namespace Ex04.Menus.Test
                     numOfCapitalLetters++;
                 }
             }
-            finalMessage = string.Format("The sentence \"{0}\" has {1} Capital letters", userInput ,numOfCapitalLetters);
+
+            finalMessage = string.Format("The sentence \"{0}\" has {1} Capital letters", userInput, numOfCapitalLetters);
             PrintToUI(finalMessage);
         }
+
         private static void PrintToUI(string i_Text)
         {
             Console.Clear();
@@ -75,6 +84,5 @@ namespace Ex04.Menus.Test
             Console.WriteLine("Press Enter to continue");
             Console.ReadLine();
         }
-
     }
 }
